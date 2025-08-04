@@ -1,0 +1,9 @@
+task - Create a user named siva with a non-interactive shell on App Server 3.
+process - 
+  1 - Find the login info of appserver 3 from the details link
+  2 - ssh into App server 3 "ssh user@ip-address"
+  3 - use command "sudo adduser username", then use password
+  4 - check using "id username"
+  5 - However, I did not use the proper command to create a non-interactive user which was "sudo adduser -s /sbin/nologin ammar"
+  6 - So, I changed the changed the user to non-interactive shell by "sudo usermod -s /usr/sbin/nologin username"
+  7 - It worked !!
